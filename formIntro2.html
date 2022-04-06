@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--setting the scale for all the widths in html- header, body..-->
+    <title>Document</title>
+</head>
+<body>
+    <!-- the difference between div and span is element display
+    div- block level element. always start new row, the border will be wider than the text
+    span- in level elemnt. the border will be on the text and not wider than the text. doesnt start new row if it doesnt need to.-->
+    <!-- semantic HTML- instead of making alot of divs we can name them differently- header, article, figure..  -->
+    <!-- box model- margin, border, padding... -->
+
+    <div style="border: 2px solid black; padding: 2px; margin: 20px">
+        <h1>Sign Up</h1>
+    </div>
+
+    <span style="border: 2px solid black">Please sign up</span>
+    
+    <!-- to make form we have to put url so the data will be saved somewhere- destination- action and method attributes, required!! -->
+    <!-- we can use div and span inside the form -->
+
+    <form action="URL" method="post"> 
+       <label for="fullName">Full Name</label><br> 
+        <input type="text" id="fullName" name="fullName" autocomplete="on" required><br> <!-- we have to make id and name so the data will be saved in a table-id, for, name-->
+       <!-- autocomplete- function that works only if the document connected to the server. then it will complete the text -->
+       <!-- validation methods- required, length, type, min, max(number), pattern, maxLegth, minLength(string) -->
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email"><br>
+        <input type="submit"><br>
+        <label for="agree">I agree</label>
+        <input type="checkbox" id="agree" name="agree">
+    </form>
+
+    <!-- ul- unordered list- bullets
+    ol- ordered list- numeric itms -->
+    <nav>
+    <ul>
+        <li><a href="firstGitPush.html">next page</a></li>
+        <li><a href="formIntro.html">home page</a></li>
+        <li><a href="https://www.google.co.il/">very useful video</a></li>
+    </ul>
+    </nav>
+
+
+    <footer>
+        <ol>
+        <li><a href="firstGitPush.html">next page</a></li>
+        <li><a href="formIntro.html">home page</a></li>
+        <li><a href="https://www.google.co.il/">very useful video</a></li>
+        </ol>
+    </footer>
+
+
+
+</body>
+</html>
